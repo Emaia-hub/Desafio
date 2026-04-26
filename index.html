@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="./styles.css">
+<script src="script.js"></script>
+<title>Quiz → Aprenda HTML</title>
+
+</head>
+<body>
+    <img src="./img/fundo2.png" class="imagem-fundo">
+
+<div class="fundo">
+  <!-- TELA INICIAL -->
+  <div class="caixa" id="telaInicial">
+    <h1>🎮 HTML QUIZ</h1>
+    <p>Teste seus conhecimentos em HTML</p>
+    <p>⏱️ 10 segundos por pergunta</p>
+    <p>🏆 Ganhe pontos e bônus por rapidez</p>
+    <button onclick="iniciarJogo()">▶ Iniciar Quiz</button>
+  </div>
+
+  <!-- TELA DO JOGO -->
+  <div class="caixa" id="telaJogo" style="display:none;">
+    <div class="topo">
+      <div id="placar">🏆 Pontos: 0</div>
+      <div id="tempo">⏱️ 10s</div>
+    </div>
+
+    <h1>HTML Quiz</h1>
+    <p id="pergunta"></p>
+
+    <button onclick="responder(0)" id="b0"></button>
+    <button onclick="responder(1)" id="b1"></button>
+    <button onclick="responder(2)" id="b2"></button>
+    <button onclick="responder(3)" id="b3"></button>
+    
+    <p id="resultado"></p>
+  </div>
+</div>
+</body>
+</html>
